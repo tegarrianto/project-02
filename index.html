@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, My Everything</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-music" loop>
+        <source src="musik/bg music.mp3" type="audio/mp3">
+    </audio>
+
+    <div id="landing-page" onclick="bukaKado(event)">
+        <div class="gift-box">🎁</div>
+        <p class="tap-text">tap to open ✨</p>
+    </div>
+
+    <div id="music-player" class="music-player">
+        <div class="album-art">🎵</div>
+        <div class="track-info">
+            <div class="track-title">If it's not you</div>
+            <div class="track-artist">PRYVT</div>
+        </div>
+    </div>
+
+    <div id="petals-container"></div>
+
+    <div id="main-content">
+        
+        <div class="hero-section scroll-section">
+            <span class="sub-title">🌸 a love letter in bloom</span>
+            <h1 class="glow-text">Happy Birthday, Teteh Siska 🤍</h1>
+            <p class="hero-desc">sebuah ruang kecil, spesial buat sosok ibu paling hebat dan kakak terbaik di semesta.</p>
+            <div class="scroll-hint">
+                <span>SCROLL TO DISCOVER</span>
+                <div class="scroll-flowers">
+                    <svg viewBox="0 0 120 100" class="wind-flowers">
+                        <path d="M60,95 C62,75 42,60 30,48" stroke="#4a3319" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <path d="M60,95 C58,70 60,45 60,18" stroke="#4a3319" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M60,95 C64,75 78,60 90,48" stroke="#4a3319" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <path d="M42,62 C36,58 38,50 45,52 C48,55 46,60 42,62 Z" fill="#2d4a22"/>
+                        <path d="M78,62 C84,58 82,50 75,52 C72,55 74,60 78,62 Z" fill="#2d4a22"/>
+                        <g transform="translate(30, 48) scale(1.3)"><path fill="#ff99bb" d="M0,-5 C3,-10 10,-3 5,0 C10,3 3,10 0,5 C-3,10 -10,3 -5,0 C-10,-3 -3,-10 0,-5 Z"/><circle cx="0" cy="0" r="1.5" fill="#ffcc00"/></g>
+                        <g transform="translate(45, 30) scale(1.4)"><path fill="#ff6699" d="M0,-5 C3,-10 10,-3 5,0 C10,3 3,10 0,5 C-3,10 -10,3 -5,0 C-10,-3 -3,-10 0,-5 Z"/><circle cx="0" cy="0" r="1.5" fill="#ffd700"/></g>
+                        <g transform="translate(60, 18) scale(1.9)"><path fill="#ff4081" d="M0,-5 C3,-10 10,-3 5,0 C10,3 3,10 0,5 C-3,10 -10,3 -5,0 C-10,-3 -3,-10 0,-5 Z"/><circle cx="0" cy="0" r="1.8" fill="#ffd700"/></g>
+                        <g transform="translate(75, 30) scale(1.4)"><path fill="#ff80ab" d="M0,-5 C3,-10 10,-3 5,0 C10,3 3,10 0,5 C-3,10 -10,3 -5,0 C-10,-3 -3,-10 0,-5 Z"/><circle cx="0" cy="0" r="1.5" fill="#ffcc00"/></g>
+                        <g transform="translate(90, 48) scale(1.3)"><path fill="#ffb3d1" d="M0,-5 C3,-10 10,-3 5,0 C10,3 3,10 0,5 C-3,10 -10,3 -5,0 C-10,-3 -3,-10 0,-5 Z"/><circle cx="0" cy="0" r="1.5" fill="#ffcc00"/></g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="letter-section scroll-section">
+            <div class="glass-card"> <span class="sub-title">from my heart 🤍</span>
+                <h2 class="section-heading glow-text">Teteh itu definisi malaikat tanpa sayap di dunia nyata.</h2>
+                <p class="letter-text">
+                    Selamat ulang tahun ya, Teh Siska. Walaupun takdir mempertemukan kita lewat dunia online dan kita gak sedarah, tapi kehadiran Teteh di hidup aku tuh bener-bener berharga bgt. Teteh udah kayak kakak kandung aku sendiri yang selalu ada pas aku butuh temen cerita.
+                </p>
+                <p class="letter-text">
+                    Aku selalu kagum bgt tiap kali ngeliat perjuangan Teteh selama ini. Menjadi single parent itu sama sekali ga mudah, tapi Teteh bisa ngebuktiin kalau Teteh mampu ngelewatin semuanya dengan luar biasa hebat demi si kecil. Pundak Teteh mungkin sering capek, tapi Teteh gapernah nyerah. Tolong inget terus ya Teh, Teteh itu wanita paling kuat yang pernah aku kenal, dan Teteh ga pernah sendirian. Teteh udah melakukan yang terbaik, beneran.
+                </p>
+                <span class="signature"— Dari adek Teteh yang paling bawel 🤍"</span>
+            </div>
+        </div>
+
+        <div class="reasons-section scroll-section">
+            <span class="sub-title">a thousand reasons why</span>
+            <h2 class="section-heading glow-text">Why I Admire You</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="icon">✨</div>
+                    <h3>Your Strength</h3>
+                    <p>Perjuangan Teteh. Cara Teteh berdiri tegak jadi ibu sekaligus ayah buat si kecil tuh bener-bener bikin aku hormat dan kagum bgt.</p>
+                </div>
+                <div class="grid-item">
+                    <div class="icon">🤍</div>
+                    <h3>Your Kind Heart</h3>
+                    <p>Walaupun hidup Teteh lagi berat dan capek-capeknya, Teteh selalu punya waktu buat dengerin randomnya aku dan kasih nasihat hangat.</p>
+                </div>
+                <div class="grid-item">
+                    <div class="icon">🌸</div>
+                    <h3>Your Beautiful Smile</h3> <p> Senyuman Teteh pas lagi meluk si kecil. Pancaran tulus seorang ibu yang selalu bikin aku ikutan terharu tiap liatnya.</p>
+                </div>
+                <div class="grid-item">
+                    <div class="icon">🎵</div>
+                    <h3>Your Warmth</h3>
+                    <p>Vibes Teteh yang keibuan dan dewasa. Walau kita cuma lewat chat/vc, Teteh selalu sukses bikin aku ngerasa dilindungi.</p>
+                </div>
+                <div class="grid-item">
+                    <div class="icon">💪</div>
+                    <h3>Your Dedication</h3>
+                    <p>Pengorbanan Teteh. Teteh selalu mentokin kebahagiaan anak di atas segalanya, Teteh bener-bener hebat bgt mendidik dia.</p>
+                </div>
+                <div class="grid-item">
+                    <div class="icon">💫</div>
+                    <h3>Simply Teteh Siska</h3>
+                    <p>Ya karena Teteh adalah Teteh Siska. Cewe terkeren, ibu yang luar biasa, dan sosok kakak terbaik yang dikirim Tuhan buat aku.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="garden-section scroll-section">
+            <div class="glass-card"> <span class="sub-title">our secret garden</span>
+                <h2 class="section-heading glow-text">A Garden Grown For You</h2>
+                <p class="garden-hint">Ketuk setiap bunga untuk membaca artinya... 🌸</p>
+                <div class="garden-container">
+                    <div class="flower-item" onclick="tampilArti(this, '🌹 Mawar Merah: Lambang doa tulus aku, semoga kebahagiaan dan keajaiban selalu melingkupi hidup Teteh ke depannya.')">
+                        <svg viewBox="0 0 24 24"><path fill="#ff2a5f" d="M12,2 C10,2 6,4 6,8 C6,13 12,16 12,16 C12,16 18,13 18,8 C18,4 14,2 12,2 Z"/><path fill="#c20030" d="M12,5 C11,5 8,7 9,9 C10,11 12,12 12,12 C12,12 14,11 15,9 C16,7 13,5 12,5 Z"/><circle cx="12" cy="8" r="1.5" fill="#ffb3d1"/></svg>
+                    </div>
+                    <div class="flower-item" onclick="tampilArti(this, '🌸 Sakura: Mengingatkan kalau badai pasti berlalu, dan Teteh bakal mekar jauh lebih indah setelah masa-masa sulit ini.')">
+                        <svg viewBox="0 0 24 24"><path fill="#ff94ba" d="M12,3 C13,6 18,5 19,7 C20,9 16,11 17,14 C15,13 13,18 12,17 C11,18 9,13 7,14 C8,11 4,9 5,7 C6,5 11,6 12,3 Z"/><circle cx="12" cy="10.5" r="2.5" fill="#fff59d"/></svg>
+                    </div>
+                    <div class="flower-item" onclick="tampilArti(this, '💮 Teratai: Seperti teratai yang tetep cantik walau tumbuh di atas lumpur, Teteh tetep bersinar hebat di tengah ujian hidup.')">
+                        <svg viewBox="0 0 24 24"><path fill="#ff5c9d" d="M12,4 C10,8 4,10 4,13 C4,17 9,18 12,20 C15,18 20,17 20,13 C20,10 14,8 12,4 Z"/><path fill="#ffb2d6" d="M12,8 C11,10 7,12 7,14 C7,16 10,16 12,17 C14,16 17,16 17,14 C17,12 13,10 12,8 Z"/></svg>
+                    </div>
+                    <div class="flower-item" onclick="tampilArti(this, '🌺 Kembang Sepatu: Aura positif dan ketegaran Teteh tuh selalu bisa nular dan jadi inspirasi buat orang di sekitar Teteh.')">
+                        <svg viewBox="0 0 24 24"><path fill="#e91e63" d="M12,4 C14,4 19,7 17,11 C20,12 21,17 17,17 C16,20 11,20 10,17 C6,18 4,13 7,11 C5,7 10,4 12,4 Z"/><circle cx="12" cy="12" r="3" fill="#ffeb3b"/></svg>
+                    </div>
+                    <div class="flower-item" onclick="tampilArti(this, '🌷 Tulip: Bentuk rasa hormat dan kagum aku yang paling dalem atas semua tetes keringat dan pengorbanan Teteh selama ini.')">
+                        <svg viewBox="0 0 24 24"><path fill="#ff4081" d="M12,4 C8,4 6,8 6,13 C6,18 9,20 12,20 C15,20 18,18 18,13 C18,8 16,4 12,4 Z"/><path fill="#ff80ab" d="M12,4 C10,6 8,10 9,14 C10,17 12,20 12,20 C12,20 14,17 15,14 C16,10 14,6 12,4 Z"/></svg>
+                    </div>
+                    <div class="flower-item" onclick="tampilArti(this, '🌻 Matahari: Teteh itu matahari buat si kecil, kehangatan Teteh yang bakal nuntun dia tumbuh jadi anak yang hebat nanti.')">
+                        <svg viewBox="0 0 24 24"><path fill="#ffc107" d="M12,2 L14,6 L19,5 L17,9 L21,11 L17,13 L19,17 L14,16 L12,20 L10,16 L5,17 L7,13 L3,11 L7,9 L5,5 L10,6 Z"/><circle cx="12" cy="11" r="4.5" fill="#4e342e"/></svg>
+                    </div>
+                </div>
+                <div id="flower-meaning">Pilih salah satu bunga di atas... ✨</div>
+            </div>
+        </div>
+
+        <div class="gallery-section scroll-section">
+            <span class="sub-title">captured in time</span>
+            <h2 class="section-heading glow-text">Your Beautiful Pictures</h2>
+            <div class="photo-container">
+                <div class="photo-item">
+                    <img src="foto/foto 1.jpg" alt="Foto 1">
+                    <div class="photo-text">you</div>
+                </div>
+                <div class="photo-item">
+                    <img src="foto/foto 2.jpg" alt="Foto 2">
+                    <div class="photo-text">are</div>
+                </div>
+                <div class="photo-item">
+                    <img src="foto/foto 3.jpg" alt="Foto 3">
+                    <div class="photo-text">so</div>
+                </div>
+                <div class="photo-item">
+                    <img src="foto/foto 4.jpg" alt="Foto 4">
+                    <div class="photo-text">beautiful</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="outro-section scroll-section">
+            <div class="glass-card"> <span class="sub-title">always & forever 🌸</span>
+                <h2 class="outro-title glow-text">You Are So Strong, Teteh Siska 🌸</h2>
+                <p class="outro-p">Di usia yang baru ini, aku doa bgt semoga pundak Teteh selalu dikasih kekuatan ekstra, hatinya selalu dilapangkan, dan rezekinya mengalir deras tanpa putus buat Teteh dan si kecil. Jangan pernah ngerasa kesepian ya Teh, kapanpun Teteh butuh bantuan, Teteh selalu punya aku di sini. Happy birthday, my strongest virtual sister! We love you so much, Teteh Siska! ✨</p>
+                <p class="footer-text">made with love, just for you 🌸</p>
+                <p class="dev-text">made with all love for my beautiful my virtual sister</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
